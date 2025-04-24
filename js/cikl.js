@@ -21,3 +21,32 @@
 // }
 
 
+
+
+// let i = 1;
+// while (i <= 10) {
+//     console.log(i);
+//     i += 1
+// }
+
+
+let message = "";
+const ADMIN_PASSWORD = "qwerty";
+const password = prompt("Введіть пароль адміністратора: ");
+
+// Якщо натиснули Cancel, записати в message рядок 'Скасовано користувачем!'
+
+if (password === null) {
+    message = "Скасовано користувачем!";
+
+    // В іншому випадку, якщо введений пароль який збігається зі значенням константи ADMIN_PASSWORD, записати в message рядок 'Ласкаво просимо!'
+
+} else if (password === ADMIN_PASSWORD) { 
+    message = "Ласкаво просимо!";}
+    // В іншому випадку,
+
+    else (password !== ADMIN_PASSWORD) {
+        message = "невірний пароль";}
+    
+    alert(message)
+        
