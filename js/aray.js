@@ -55,9 +55,9 @@
 
 
 
-const number = ["0951234567", "0683223195", "0504595669", "0723222454"]
-for(let i = 0; i < number.length; i += 1) {
-    console.log("+38" + number[i] );
+// const number = ["0951234567", "0683223195", "0504595669", "0723222454"]
+// for(let i = 0; i < number.length; i += 1) {
+//     console.log("+38" + number[i] );
     
-}
+// }
   
