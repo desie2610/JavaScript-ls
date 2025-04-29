@@ -30,23 +30,23 @@
 // }
 
 
-let message = "";
-const ADMIN_PASSWORD = "qwerty";
-const password = prompt("Введіть пароль адміністратора: ");
+// let message = "";
+// const ADMIN_PASSWORD = "qwerty";
+// const password = prompt("Введіть пароль адміністратора: ");
 
 // Якщо натиснули Cancel, записати в message рядок 'Скасовано користувачем!'
 
-if (password === null) {
-    message = "Скасовано користувачем!";
+// if (password === null) {
+//     message = "Скасовано користувачем!";
 
-    // В іншому випадку, якщо введений пароль який збігається зі значенням константи ADMIN_PASSWORD, записати в message рядок 'Ласкаво просимо!'
+//     // В іншому випадку, якщо введений пароль який збігається зі значенням константи ADMIN_PASSWORD, записати в message рядок 'Ласкаво просимо!'
 
-} else if (password === ADMIN_PASSWORD) { 
-    message = "Ласкаво просимо!";}
-    // В іншому випадку,
+// } else if (password === ADMIN_PASSWORD) { 
+//     message = "Ласкаво просимо!";}
+//     // В іншому випадку,
 
-    else (password !== ADMIN_PASSWORD) {
-        message = "невірний пароль";}
+//     else (password !== ADMIN_PASSWORD) {
+//         message = "невірний пароль";}
     
-    alert(message)
+//     alert(message)
         
