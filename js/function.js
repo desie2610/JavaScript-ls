@@ -68,13 +68,13 @@
 
 // Нумерація повинна починатися з 1. Наприклад, для першого елемента масиву ['Mango', 'Poly', 'Ajax'] з індексом 0 буде виведено '1 - Mango', а для індексу 2 виведе '3 - Ajax'.
 
-const logItems = function (array) {
-    // console.log(array);
+// const logItems = function (array) {
+//     // console.log(array);
     
-    for (let i = 0; i < array.length; i += 1) {
-        console.log(`${i+ 1} - ${array[i]}`);
+//     for (let i = 0; i < array.length; i += 1) {
+//         console.log(`${i+ 1} - ${array[i]}`);
         
-    }
-}
-console.log(logItems(['Mango', 'Poly', 'Ajax']));
+//     }
+// }
+// console.log(logItems(['Mango', 'Poly', 'Ajax']));
 
