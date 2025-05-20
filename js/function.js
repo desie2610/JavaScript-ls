@@ -78,3 +78,9 @@
 // }
 // console.log(logItems(['Mango', 'Poly', 'Ajax']));
 
+const show = (...arg) => {
+    console.log(arg);
+    
+}
+
+console.log(show(1, 2, 3, 4, 5));
