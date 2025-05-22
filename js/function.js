@@ -78,9 +78,79 @@
 // }
 // console.log(logItems(['Mango', 'Poly', 'Ajax']));
 
-const show = (...arg) => {
-    console.log(arg);
+// const show = (...arg) => {
+//     console.log(arg);
     
+// }
+
+// console.log(show(1, 2, 3, 4, 5));
+
+
+
+// const calculator = (a, b, callback) => {
+//     console.log(callback);
+    
+//     return callback(a, b)
+// }
+
+// // console.log(sunNum(1,2));
+// const sumNum = (a,b) => {
+//     return a + b;
+// }
+
+// const minus = (a,b) => {
+//     return a - b;
+// }
+// console.log(calculator(10,2, sumNum));
+
+
+// const multiplyArray = (array, number, callback) => {
+//     console.log(array);
+//     console.log(number);
+//     console.log(callback);
+//     const result = [];
+//     // for(let i = 0; i < array.length; i += 1) {
+//     //     result.push(callback(array[i], number));
+//     // }
+//     for(const elem of array) {
+//         result.push(callback(elem, number));
+//     }
+//     return result;
+// }
+
+// const multiply = (a, b) => a*b;
+// const arr = [1, 4, 6, 10, 5];
+// const num = 3;
+// console.log(multiplyArray(arr, num, multiply));
+
+
+// Створіть функцію processArray(array, callback), яка приймає масив та функцію-колбек. Викличте processArray з різними масивами та функціями-колбеками, щоб виконати наступні операції:
+// Порахувати суму всіх елементів масиву.
+// Знайти мінімальний елемент масиву.
+// Знайти максимальний елемент масиву.
+// Перепишіть колбек-функції на стрілки
+
+const arr = [1, 2, 3, 4, 5]
+
+const processArray = (array, callback) => {
+    return callback(array)
+   
 }
 
-console.log(show(1, 2, 3, 4, 5));
+const plusNum = (arr) => {
+     let res = 0;
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        res += element
+    }
+    return res;
+}
+
+const minNum = (arr) => {
+ let min = arr[0]
+ 
+}
+
+console.log(processArray(arr,plusNum));
+console.log(processArray(arr, minNum));
+
