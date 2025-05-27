@@ -130,27 +130,27 @@
 // Знайти максимальний елемент масиву.
 // Перепишіть колбек-функції на стрілки
 
-const arr = [1, 2, 3, 4, 5]
+// const arr = [1, 2, 3, 4, 5]
 
-const processArray = (array, callback) => {
-    return callback(array)
+// const processArray = (array, callback) => {
+//     return callback(array)
    
-}
+// }
 
-const plusNum = (arr) => {
-     let res = 0;
-    for (let index = 0; index < arr.length; index++) {
-        const element = arr[index];
-        res += element
-    }
-    return res;
-}
+// const plusNum = (arr) => {
+//      let res = 0;
+//     for (let index = 0; index < arr.length; index++) {
+//         const element = arr[index];
+//         res += element
+//     }
+//     return res;
+// }
 
-const minNum = (arr) => {
- let min = arr[0]
+// const minNum = (arr) => {
+//  let min = arr[0]
  
-}
+// }
 
-console.log(processArray(arr,plusNum));
-console.log(processArray(arr, minNum));
+// console.log(processArray(arr,plusNum));
+// console.log(processArray(arr, minNum));
 
