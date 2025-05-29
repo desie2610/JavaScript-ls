@@ -10,13 +10,11 @@
 
 // // user.location = {
 // //     city: "london",
-// //     country: "England", 
+// //     country: "England",
 // // }
-
 
 // // console.log(user);
 // // console.log(user.home);
-
 
 // // Присвоїти змінній apartment об'єкт, який описує квартиру з
 // // наступними характеристиками:
@@ -46,12 +44,10 @@
 //   email: "henry.carter@aptmail.com",
 // }
 
-
 // const artRating = apartament.reting;
 // const aptDescr = apartament.descr;
 // const  aptPrice = apartament.price;
 // const aptTags = apartament.tags;
-
 
 // // Доповни код, присвоївши оголошеним змінним вирази звернення до відповідних
 // // властивостей об'єкта apartment.
@@ -79,12 +75,27 @@
 // console.log(numberOfTags);
 // console.log(firstTag);
 
+// const user = {
+//   name: "Timofii",
+//   age: 14,
+//   city: "kyiv",
+//   street: "soloma",
+//   house: "46/A",
+//   apatment: 345,
+
+//   showName () {
+
+//     return this.name
+//   },
 
 
+// };
+
+// // delete user.name
+
+// console.log(user.showName());
 
 
-
-
-
+// console.log(user);
 
 
