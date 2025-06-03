@@ -5,6 +5,8 @@
 //     lastName: "moiseienko",
 // }
 
+// const { use } = require("react");
+
 // // user.city = "London"
 // // user.prava = "Admin"
 
@@ -88,14 +90,76 @@
 //     return this.name
 //   },
 
-
 // };
 
 // // delete user.name
 
 // console.log(user.showName());
 
-
 // console.log(user);
 
+const user = {
+  parols: "qwerty",
+  city: "kyiv",
+  name: "timofii",
+  age: 14,
+  email: "person@gmail.com",
+};
 
+// for (const item in user) {
+//  console.log('key:',item); // отримаєм ключі
+//   console.log('value:',user[item]); // отримаєм значення ключів
+
+// }
+
+//  новий синтаксис
+
+// const key = Object.keys(user)
+// console.log(key);
+
+// const value = Object.values(user)
+// console.log(value);
+
+// const entries = Object.entries(user)
+// console.log(entries);
+
+// for (const item of entries) {
+//     console.log(item[0]);
+
+// }
+
+// console.dir(Object)
+
+// const friends = [
+//   { name: "Mango", online: false },
+//   { name: "Kiwi", online: true },
+//   { name: "Poly", online: false },
+//   { name: "Ajax", online: false },
+// ];
+
+// for (const friend of friends) {
+//     console.log(friend.online);
+
+// }
+
+// Написати функція яка буде отримувати масив та ім’я друга якого потрібно знайти
+
+const friends = [
+  { name: "Mango", online: false },
+  { name: "Kiwi", online: true },
+  { name: "Poly", online: false },
+  { name: "Ajax", online: false },
+];
+
+const findName = (userName, array) => {
+  for (const friend of array) {
+    if (friend.name === userName) {
+      return `Ви знайшли ім'я ${userName}`;
+    }
+  }
+};
+
+console.log(findName("Ajax", friends));
+console.log(findName("Kiwi", friends));
+console.log(findName("Mango", friends));
+console.log(findName("Poly", friends));
