@@ -144,22 +144,59 @@ const user = {
 
 // Написати функція яка буде отримувати масив та ім’я друга якого потрібно знайти
 
-const friends = [
-  { name: "Mango", online: false },
-  { name: "Kiwi", online: true },
-  { name: "Poly", online: false },
-  { name: "Ajax", online: false },
-];
+// const friends = [
+//   { name: "Mango", online: false },
+//   { name: "Kiwi", online: true },
+//   { name: "Poly", online: false },
+//   { name: "Ajax", online: false },
+// ];
 
-const findName = (userName, array) => {
-  for (const friend of array) {
-    if (friend.name === userName) {
-      return `Ви знайшли ім'я ${userName}`;
-    }
-  }
-};
+// const findName = (userName, array) => {
+//   for (const friend of array) {
+//     if (friend.name === userName) {
+//       return `Ви знайшли ім'я ${userName}`;
+//     }
+//   }
+// };
 
-console.log(findName("Ajax", friends));
-console.log(findName("Kiwi", friends));
-console.log(findName("Mango", friends));
-console.log(findName("Poly", friends));
+// console.log(findName("Ajax", friends));
+// console.log(findName("Kiwi", friends));
+// console.log(findName("Mango", friends));
+// console.log(findName("Poly", friends));
+
+
+// let a = 5; // якщо ми передаємо значення однієї змінної в іншу то в іншій змінні      створюється копія цього значення, тобто присвоєнняя за значенням
+// let b = a;
+// b = 10;
+// console.log(a);
+// console.log(b);
+// console.log(b === a);
+
+const objA = { // в складних типах данних при передаванні одних значень в іншу передається за посиланням оригінал
+  x: 1,
+  y: 2,
+  z: 3,
+}
+const objB = objA 
+objB.x = 4
+console.log(objA);
+console.log(objA === objB);
+
+console.log(objB);
+
+const c = 5;
+const d = 5;
+
+console.log(c === d);
+const qwe = {}
+const rty = {}
+console.log(qwe === rty);
+
+
+
+
+
+
+
+
+
