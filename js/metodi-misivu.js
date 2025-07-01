@@ -61,26 +61,103 @@
 // const totalNumbers = numbers.reduce((acumulator, num) => acumulator += num,0)
 // console.log(totalNumbers);
 
-// const students = [
-//   { name: "Anna", age: 20, gender: "female", grade: 85 },
-//   { name: "Ivan", age: 22, gender: "male", grade: 90 },
-//   { name: "Olena", age: 19, gender: "female", grade: 78 },
-//   { name: "Petro", age: 21, gender: "male", grade: 92 },
-// ];
+
 
 // const totalGrade = students.reduce((acc, item) => acc += item.grade,0)
 // console.log(totalGrade);
 
 
 //порахувати загальну зарплату
-const salary = {
-  mango: 30,
-  poly: 40,
-  ajax: 50,
-}
+// const salary = {
+//   mango: 30,
+//   poly: 40,
+//   ajax: 50,
+// }
 
-const res = Object.values(salary).reduce((acc, item) => acc += item,0)
-console.log(res);
+// const res = Object.values(salary).reduce((acc, item) => acc += item,0)
+// console.log(res);
+
+//отримати масив усіх tags
+
+
+// const result = tweets.flatMap(item => item.tags)
+// console.log(result);
+
+//  const resultTwo= result.reduce((acc, item) => {
+
+//   if (acc[item]) {
+//    acc[item] += 1
+//   } else {acc[item] =1}
+//  return acc
+//  },
+//  {})
+//  console.log(resultTwo);
+
+
+
+// const arr = [3,7,2,7,1,3,8,2,6]
+// const copy = arr.slice()
+// // console.log(copy);
+// const sort = copy.sort()
+// console.log(sort);
+
+// const copy  = [...arr].sort()
+// console.log(copy);
+// console.log(arr);
+
+// const tweets = [
+//   { id: "000", likes: 5, tags: ["js", "nodejs"] },
+//   { id: "001", likes: 2, tags: ["html", "css"] },
+//   { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+//   { id: "003", likes: 8, tags: ["css", "react"] },
+//   { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+// ];
+
+// const result = [...tweets].sort((a,b) => a.likes - b.likes)
+// const result2 = [...tweets].sort((a,b) => b.likes - a.likes)
+// console.log(result);
+// console.log(result2);
+// console.log(tweets);
+
+// const students = [
+//   { name: "Anna", age: 20, gender: "female", grade: 85 },
+//   { name: "Ivan", age: 22, gender: "male", grade: 90 },
+//   { name: "Petro", age: 21, gender: "male", grade: 92 },
+//   { name: "Olena", age: 19, gender: "female", grade: 78 },
+  
+// ];
+
+// const result = [...students].sort((a,b) => a.name.localeCompare(b.name))
+// console.log(result);
+
+const players = [
+  { id: "player-1", name: "Mango", timePlayed: 310, points: 54, online: false },
+  { id: "player-2", name: "Poly", timePlayed: 470, points: 92, online: true },
+  { id: "player-3", name: "Kiwi", timePlayed: 230, points: 48, online: true },
+  { id: "player-4", name: "Ajax", timePlayed: 150, points: 71, online: false },
+  { id: "player-5", name: "Chelsy", timePlayed: 80, points: 48, online: true },
+];
+// Відсортувати по кількості проведенного часу в грі
+
+const result = [...players].sort((a,b) => a.timePlayed - b.timePlayed)
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
 
 
 
